@@ -1,0 +1,27 @@
+{
+  "name": "0023modulo8sesion4",
+  "version": "1.0.0",
+  "description": "Subir archivos con express-fileupload",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/operezedutecno/0023Modulo8Sesion4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/operezedutecno/0023Modulo8Sesion4/issues"
+  },
+  "homepage": "https://github.com/operezedutecno/0023Modulo8Sesion4#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
