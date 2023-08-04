@@ -7,6 +7,8 @@ const app = express()
 // Recuerden que este método no admite body, deben enviar el nombre por parámetro en la URL.
 const fs = require("fs")
 
+fs.unlinkSync
+
 
 
 //Constante utilizada para conocer los tipos de archivo permitidos en la ruta upload
@@ -21,6 +23,7 @@ app.listen(3000, () => console.log("Servidor en ejecución"))
 
 app.post("/upload", async(request, response) => {
     console.log(request.files);
+    console.log(request.body);
     if(!request.files) {
         return response.status(400).json({success: false, message: "Por favor subir un archivo"})
     }
