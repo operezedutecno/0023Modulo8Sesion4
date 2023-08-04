@@ -3,6 +3,17 @@ const fileupload = require("express-fileupload")
 const path = require("path")
 const app = express()
 
+// Definir una ruta que reciba un parametro nombre de archivo para ser eliminado, deben usar el método delete.
+// Recuerden que este método no admite body, deben enviar el nombre por parámetro en la URL.
+const fs = require("fs")
+
+
+
+//Constante utilizada para conocer los tipos de archivo permitidos en la ruta upload
+const extensionesPermitidas = []
+//Constante para definir peso máximo del archivo a subir (Valor expresado en MB)
+const maximoPermitido = 3
+
 app.use(express.json())
 app.use(fileupload({ createParentPath: true}))
 
