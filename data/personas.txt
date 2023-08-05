@@ -1,1 +1,1 @@
-[{"rut":"13213213","nombre":"Osman","apellido":"Pérez","foto":"public/img/fotos/1691248295853-fotoOsman.jpg"},{"rut":"192552850","nombre":"María","apellido":"González","foto":"public/img/fotos/1691248357269-wallpaper.jpg"}]
+[]
