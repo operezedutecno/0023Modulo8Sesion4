@@ -81,3 +81,12 @@ app.delete("/archivos/:nombre_archivo", (request, response) => {
         response.status(500).json({ success: false, message: `Error eliminando el archivo ${nombre}`})
     }
 })
+
+app.get("/registro", (request, response) => {
+    response.sendFile(`${__dirname}/views/registro.html`)
+})
+
+
+// Definir la estructura de un formulario que solicite RUT, nombre, apellido y Foto (utlizar para la foto un input de tipo file)
+// Preferiblemente incluir Bootstrap.
+// Definir un middleware para publicar archivos (archivos js y css)
